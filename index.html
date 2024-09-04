@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/shaking_icon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -48,27 +48,30 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Growing from Exploration: A self-exploring framework for robots based on foundation models</h1>
+          <h1 class="title is-1 publication-title">Depth Restoration of Hand-Held Transparent Objects for Human-to-Robot Handover</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://marcyu0303.github.io/GExp.github.io/">author 1</a><sup>1</sup>,</span>
+              <a href="https://github.com/MarcYu0303">Ran Yu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://marcyu0303.github.io/GExp.github.io/">author 2</a><sup>2</sup>,</span>
+              Haixin Yu</a><sup>1</sup>,
             <span class="author-block">
-              <a href="https://marcyu0303.github.io/GExp.github.io/">author 3</a><sup>2</sup>,
+              Huang Yan</a><sup>1</sup>,
             </span>
+              Ziwu Song</a><sup>1</sup>,
+            </span>
+              Shoujie Li</a><sup>1</sup>,
+            </span>
+              and <a href="https://ssr-group.net/">Wenbo Ding</a><sup>1</sup>
           </div>
-
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Tsinghua University</span>
-            <span class="author-block"><sup>2</sup>Tsinghua University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://marcyu0303.github.io/GExp.github.io/"
+                <a href="https://arxiv.org/pdf/2408.14997"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -77,7 +80,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://marcyu0303.github.io/GExp.github.io/"
+                <a href="https://arxiv.org/abs/2408.14997"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -105,16 +108,16 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link.
+              <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Data (Comming Soon)</span>
                   </a>
-            </div> -->
+            </div>
 
           </div>
         </div>
@@ -123,7 +126,7 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -131,13 +134,10 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
       </h2>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <section class="section">
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Here is the abstract of GExp.
+            Transparent objects are common in daily life, while their unique optical properties pose challenges for RGB-D cameras to capture accurate depth information. For assistant robots, accurately perceiving transparent objects held by humans is essential for effective human-robot interaction. This paper presents a <strong>H</strong>and-<strong>A</strong>ware <strong>D</strong>epth <strong>R</strong>estoration (<strong>HADR</strong>) method for hand-held transparent objects based on creating an implicit neural representation function from a single RGB-D image. The proposed method introduces the hand posture as an important guidance to leverage semantic and geometric information. To train and evaluate the proposed method, we create a high-fidelity synthetic dataset called <strong>TransHand-14K</strong> with a real-to-sim data generation scheme. Experiments show that our method has better performance and generalization ability compared with existing methods. We further develop a real-world human-to-robot handover system based on the proposed HADR method, indicating its application potential in human-robot interaction.
           </p>
         </div>
       </div>
@@ -171,29 +171,35 @@
 
 <section class="section">
   <div class="container is-max-widescreen">
-
     <div class="rows">
+      <h2 class="title is-4"><span class="dperact">TransHand-14K Dataset</span></h2>
+      <div class="content has-text-justified">
+        <p>
+          We create a high fidelity synthetic dataset named TransHand-14K for percpetion research of hand-held transparent objects.
+        </p>
+      <div class="image-row" style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
+        <div class="content" style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; height: 350px;">
+            <img src="static/images/dataset_generation_method.png" class="interpolation-image" style="height: 300px; width: auto;" />
+            <p><strong>Dataset Generation Method.</strong></p>
+        </div>
+        <div class="content" style="display: flex; flex-direction: column; justify-content: flex-end; align-items: center; text-align: center; height: 350px;">
+            <img src="static/images/dataset_visualization.png" class="interpolation-image" style="height: 300px; width: auto;" />
+            <p><strong>Teaser of TransHand-14K.</strong></p>
+        </div>
+    </div>
+      
+    
+    
 
-
-    <!-- Animation. -->
     <div class="rows is-centered ">
       <div class="row is-full-width">
-        <h2 class="title is-3"><span class="dperact">GExp</span></h2>
-
-        <!-- Interpolating. -->
-        <div class="content has-text-justified">
-        <!-- <br> -->
-        </div>
-        <img src="static/images/framework2.png" class="interpolation-image" />
-        </br>
-        </br>
-          <p class="content has-text-justified">
-            <strong>Robot exploration framework GExp.</strong> GExp allows robot to actively explore the new environment by observing environment, generating feasible tasks, solving those tasks independently, and verifying the success of execution. During the process of exploration, GExp maintains and updates a skills library by reflecting on successful task and generating task-related skills.
+        <h2 class="title is-4"><span class="dperact">Hand-Aware Depth Restoration Method</span></h2>
+        <div class="content" style="text-align: center;">
+        <img src="static/images/method.png" class="interpolation-image" />
+          <p>
+            <strong>Overview of proposed depth restoration method.</strong> (a) Ray and voxel features are generated from the RGB and corrupted point cloud. (b) We introduce hand pose as an additional guidance for depth restoration. (c) The terminated probability and position of each ray-voxel pair are predicted. The final restored depth is obtained by ray-wise maxpooling. 
           </p>
-          
-        </br>
-        </br>
-                
+        </div>              
     </div>
   </div>
 </section>
@@ -220,15 +226,42 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content" style="text-align: center;">
+          <img src="static/images/dataset_generation_method.png" class="interpolation-image" />
+          <p>
+            Dataset Generation Method
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+          <div class="content" style="text-align: center;">
+            <img src="static/images/dataset_visualization.png" class="interpolation-image" />
+            <p>
+              Teaser of TransHand-14K
+            </p>
+          </div>
+      </div>
+    </div>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{
-  author    = {},
-  title     = {Growing from Exploration: A self-exploring framework for robots based on foundation models},
-  journal   = {},
-  year      = {2024},
+    <pre><code>@article{yu2024depth,
+    title    =  {Depth Restoration of Hand-Held Transparent Objects for Human-to-Robot Handover},
+    author   =  {Yu, Ran and Yu, Haixin and Yan, Huang and Song, Ziwu and Li, Shoujie and Ding, Wenbo},
+    journal  =  {arXiv preprint arXiv:2408.14997},
+    year     =  {2024}
 }</code></pre>
   </div>
 </section>
