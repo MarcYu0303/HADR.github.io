@@ -1,1 +1,1 @@
-This is the repository of Growing from Exploration: A self-exploring framework for robots based on foundation models.
+This is the website repo of "Depth Restoration of Hand-held Transparent Objects for Human-to-Robot Handover".
