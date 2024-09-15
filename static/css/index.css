@@ -21,6 +21,9 @@ body {
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
+  display: flex;
+  justify-content: center; /* Horizontally center the video */
+  align-items: center; /* Vertically center the video */
 }
 
 .teaser {
